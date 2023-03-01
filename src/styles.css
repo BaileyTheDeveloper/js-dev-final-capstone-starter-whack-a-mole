@@ -1,82 +1,101 @@
 html {
-  /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
-  box-sizing: border-box;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index:0;
-  overflow: hidden;
+	background: url("../assets/den4zwg-45a7fe9e-d38a-417c-815c-3e56972adf62.jpg")
+		no-repeat center center fixed;
+	/* background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true") */
+	/* no-repeat center center fixed; */
+	box-sizing: border-box;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 0;
+	overflow: hidden;
+	font-family: "Press Start 2P", cursive;
 }
 
 h1 {
-  text-align: center;
-  font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color: white;
-  -webkit-text-stroke: 2px black;
+	text-align: center;
+	font-size: 60px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	font-family: "Press Start 2P", cursive;
+	color: yellow;
+	-webkit-text-stroke: 2px blue;
 }
 
 h2 {
-  text-align: center;
-  font-size: 40px;
-  color: white;
-  -webkit-text-stroke: 1px black;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	-webkit-text-stroke: 1px black;
 }
 
 #start {
-    text-align: center;
-    font-size: 30px;
+	text-align: center;
+	color: yellow;
+	background-color: blue;
+	border-radius: 25px;
+	padding: 20px;
+	font-size: 30px;
+	font-family: "Press Start 2P", cursive;
+	cursor: po;
 }
 
-#timer{
-    color: white;
+#timer {
+	color: yellow;
+	-webkit-text-stroke: 2px blue;
+}
+
+#score {
+	color: yellow;
+	-webkit-text-stroke: 2px blue;
 }
 
 .grid {
-  width: 600px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  /*cursor: url('./assets/mallet.png'), pointer;*/
+	width: 600px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	cursor: url("../assets/icons8-pokeball-48.png"), pointer;
 }
 
 .hole {
-  flex: 1 0 33.33%;
-  overflow: hidden;
-  position: relative;
+	flex: 1 0 33.33%;
+	overflow: hidden;
+	position: relative;
 }
 
 .hole:after {
-  display: block;
-  /*background: url("./assets/hole.png") bottom center no-repeat;*/
-  background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true") bottom center no-repeat;
-  background-size:contain;
-  content:'';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: -40%;
-  z-index: 2;
-  pointer-events:none;
+	display: block;
+	/*background: url("./assets/hole.png") bottom center no-repeat;*/
+	background: url("https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/hole.png?raw=true")
+		bottom center no-repeat;
+	background-size: contain;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: -40%;
+	z-index: 2;
+	pointer-events: none;
 }
 
 .mole {
-  /*background:url('./assets/mole.png') bottom center no-repeat;*/
-  background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat;
-  background-size: 40%;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  height: 100%;
-  /*transition: transform 0.5s;*/
-  transition: all 1s;
-  pointer-events:auto;
+	background: url(../assets/toppng.com-okemon-alolan-diglett-600x643.png) bottom
+		center no-repeat;
+	/* background:url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/mole.png?raw=true') bottom center no-repeat; */
+	background-size: 44%;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	/*transition: transform 0.5s;*/
+	transition: all 1s;
+	pointer-events: auto;
 }
 
 .hole.show .mole {
-  top: 0;
-  /*transform: scale(1.1);*/
+	top: 0;
+	/*transform: scale(1.1);*/
 }
